@@ -1,0 +1,23 @@
+<head>
+    <title>
+        JAVASCRIPT
+    </title>
+</head>
+<script>
+   //Passing an array to a function
+   function display(numbers) //(parameters)
+   {
+        let total = 0
+        for(let element of numbers)
+        {
+            total += element
+        }
+        return total
+   }
+
+   const arr = [10,20,30,40,50] //static array (arguemnts)
+   document.writeln("Array=" +arr+"</br>")
+   document.writeln("Output=" +display(arr))
+</script>
+</head>
+</html>

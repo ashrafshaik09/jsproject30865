@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            JAVASCRIPT
+        </title>
+    </head>
+    <script>
+    // Arrays
+    document.writeln("<u>Demo on Arrays</u><br>")
+        const a = [77,99,10] //same type of elements
+        document.writeln(a+"</br>")
+        document.writeln(typeof(a)+"</br>")
+        document.writeln(a.length+"</br>")
+        document.writeln(a[0]+"</br>")
+        document.writeln(a[1]+"</br>")
+        document.writeln(a[2]+"</br>")
+        document.writeln(a[5]+"</br>")
+        document.writeln(typeof(a[1]+"<br>"))
+        a[1] = 100
+        a[2] = "CSE"
+        document.writeln(a+"</br>")
+        a.push("MSWD")
+        a.push(100)
+        document.writeln(a+"</br>")
+        document.writeln(a.length+"</br>")
+        a.pop()
+        document.writeln(a+"</br>")
+        document.writeln(a.length+"</br>")
+        document.writeln(a.reverse()+"</br>")
+        document.writeln(a.sort()+"</br>")
+        document.writeln("Array="+a+"</br>")
+        let element = a.shift() //removes first element
+        document.writeln(element+"</br>") //element removed is dispayed
+        document.writeln("After shifting="+a+"</br>")
+        let len = a.unshift(100.5) //adds element at first
+        document.writeln(len+"</br>") //length of array is displayed
+        document.writeln("After unshifting="+a+"</br>")
+        let len1 = a.unshift("aws",31,'pfsd') //adds element at first
+        document.writeln("After unshifting="+a+"</br>")
+        document.writeln("<u>Display Array Elemnts using for loop</br></u>")
+        for(let i=0;i<a.length;i++)
+        {
+            document.writeln(a[i]+"<br>") // array elements are displayed
+        }
+        document.writeln("<u>Display Array Elemnts using for in loop</br></u>")
+        for(let i in a)
+        {
+            document.writeln(a[i]+"<br>") // array elements are displayed
+        }
+        document.writeln("<u>Display Array Elemnts using for of loop</br></u>") //element wise, not index wise; hence the best...?
+        for(let element of a)
+        {
+            document.writeln(element+"<br>") // array elements are displayed
+        }
+    </script>
+</html>
